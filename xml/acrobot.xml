@@ -1,6 +1,8 @@
 <mujoco>
+	<!-- timestep是一次进行模拟的时间这里意思是相当于一秒进行1000次模拟 -->
+	<!--integrator 积分器 或者不使用坍塌的情况下实现自己的积分器-->
 	<option timestep="0.001" integrator="RK4">
-		<flag sensornoise="enable" contact="disable" energy="enable"/>
+		<flag sensor="enable" contact="disable" energy="enable"/>
 	</option>
 
 	<worldbody>
